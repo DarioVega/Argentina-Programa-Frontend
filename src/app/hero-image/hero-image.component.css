@@ -1,0 +1,22 @@
+.hero-image {
+  background-image: url("../../assets/hero-image-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-title {
+  font-size: 10vw;
+  color: #fff;
+}
