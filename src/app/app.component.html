@@ -1,6 +1,67 @@
-<app-hero-image></app-hero-image>
-<div class="container">
-  <app-acerca></app-acerca>
-  <app-servicios></app-servicios>
-  <app-contacto></app-contacto>
-</div>
+<header>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3">Darío Vega</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link link-secondary active"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" aria-current="page" href="about"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-secondary"
+              aria-current="page"
+              href="services"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-secondary"
+              aria-current="page"
+              href="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <a href="#" class="d-flex btn btn-outline-primary">Login</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ***************************************************************************************************** -->
+
+<router-outlet></router-outlet>
+
+<!-- ***************************************************************************************************** -->
+
+<footer class="bg-light pt-2">
+  <p class="lead text-center">
+    This page was designed and developed by
+    <a href="contact" class="text-decoration-none"
+      ><span class="fw-bold fst-italic">Darío Vega</span></a
+    >
+  </p>
+</footer>

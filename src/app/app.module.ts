@@ -2,21 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeroImageComponent } from './hero-image/hero-image.component';
-import { AcercaComponent } from './acerca/acerca.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { ContactoComponent } from './contacto/contacto.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
+
+const appRoutes: Routes = [
+  {path:'',component:HomeComponent},
+  {path:'about',component:AboutComponent},
+  {path:'services',component:ServicesComponent},
+  {path:'contact',component:ContactComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroImageComponent,
-    AcercaComponent,
-    ServiciosComponent,
-    ContactoComponent
+    HomeComponent,
+    AboutComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
