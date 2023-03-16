@@ -15,16 +15,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               class="nav-link link-secondary active"
               aria-current="page"
-              href="#"
+              href="#home"
               >Home</a
             >
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link link-secondary" aria-current="page" href="about"
+            <a class="nav-link link-secondary" aria-current="page" href="#about"
               >About</a
             >
           </li>
@@ -32,7 +32,7 @@
             <a
               class="nav-link link-secondary"
               aria-current="page"
-              href="services"
+              href="#services"
               >Services</a
             >
           </li>
@@ -40,7 +40,7 @@
             <a
               class="nav-link link-secondary"
               aria-current="page"
-              href="contact"
+              href="#contact"
               >Contact</a
             >
           </li>
@@ -53,14 +53,17 @@
 
 <!-- ***************************************************************************************************** -->
 
-<router-outlet></router-outlet>
-
+<!-- <router-outlet></router-outlet> -->
+<app-home id="home"></app-home>
+<app-about id="about"></app-about>
+<app-services id="services"></app-services>
+<app-contact id="contact"></app-contact>
 <!-- ***************************************************************************************************** -->
 
 <footer class="bg-light pt-2">
   <p class="lead text-center">
     This page was designed and developed by
-    <a href="contact" class="text-decoration-none"
+    <a href="#about" class="text-decoration-none"
       ><span class="fw-bold fst-italic">Darío Vega</span></a
     >
   </p>
